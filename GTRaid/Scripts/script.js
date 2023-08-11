@@ -128,9 +128,6 @@ var hero114 = new Hero("Neva", "light", 2, "downed", "injured", "Two-Handed", ""
 
 
 
-
-
-
 //將英雄變數放進陣列中
 var heros = Array.from({ length: 114 }, function (_, i) {
   var num = i + 1;
@@ -163,44 +160,26 @@ for (let i = 0; i < heros.length; i++) {
 
   if (heros[i].attribute == "normal") {
     $('#normal-hero').append(newDiv1);
-    //$('#icon' + i).append(newGrid);
-    //$('#icon' + i).addClass(heros[i].sort1);
-    //$('#icon' + i).addClass(heros[i].sort2);
   }
 
   if (heros[i].attribute == "water") {
     $('#water-hero').append(newDiv1);
-    //$('#icon' + i).append(newGrid);
-    //$('#icon' + i).addClass(heros[i].sort1);
-    //$('#icon' + i).addClass(heros[i].sort2);
   }
 
   if (heros[i].attribute == "fire") {
     $('#fire-hero').append(newDiv1);
-    //$('#icon' + i).append(newGrid);
-    //$('#icon' + i).addClass(heros[i].sort1);
-    //$('#icon' + i).addClass(heros[i].sort2);
   }
 
   if (heros[i].attribute == "earth") {
     $('#earth-hero').append(newDiv1);
-    //$('#icon' + i).append(newGrid);
-    //$('#icon' + i).addClass(heros[i].sort1);
-    //$('#icon' + i).addClass(heros[i].sort2);
   }
 
   if (heros[i].attribute == "light") {
     $('#light-hero').append(newDiv1);
-    //$('#icon' + i).append(newGrid);
-    //$('#icon' + i).addClass(heros[i].sort1);
-    //$('#icon' + i).addClass(heros[i].sort2);
   }
 
   if (heros[i].attribute == "dark") {
     $('#dark-hero').append(newDiv1);
-    //$('#icon' + i).append(newGrid);
-    //$('#icon' + i).addClass(heros[i].sort1);
-    //$('#icon' + i).addClass(heros[i].sort2);
   }
 }
 
@@ -500,13 +479,13 @@ class Accessory {
 }
 //宣告飾品
 var accessory1 = new Accessory("Minotaurs Necklace", "all");
-var accessory2 = new Accessory("Mirror Earring of Faith", "light");
-var accessory3 = new Accessory("Mirror Earring of Nobility", "dark");
-var accessory4 = new Accessory("Mirror Earring of Patience", "normal");
-var accessory5 = new Accessory("Mirror Earring of Worship", "water");
-var accessory6 = new Accessory("Mirror Necklace of Riches", "earth");
-var accessory7 = new Accessory("Ruby Mirror Ring", "fire");
-var accessory8 = new Accessory("Sharp Shooter", "all");
+var accessory2 = new Accessory("Sniper Goggles", "all");
+var accessory3 = new Accessory("Mirror Earring of Faith", "light");
+var accessory4 = new Accessory("Mirror Earring of Nobility", "dark");
+var accessory5 = new Accessory("Mirror Earring of Patience", "normal");
+var accessory6 = new Accessory("Mirror Earring of Worship", "water");
+var accessory7 = new Accessory("Mirror Necklace of Riches", "earth");
+var accessory8 = new Accessory("Ruby Mirror Ring", "fire");
 var accessory9 = new Accessory("Sharp Shooter", "all");
 
 
@@ -594,7 +573,6 @@ $('.hero-icon-Container').click(function () {
   if (optionValue == "hero4") {
     $chain_container.find('.chain-Select-4').attr('src', clickObject.find('.hero-img img').attr('src'));
   }
-
   //Click_Icon(點擊物件class,選擇清單class,複製物件class)
   Click_Icon(clickObject, selectList, copyObject);
 })
@@ -736,13 +714,9 @@ function Click_Edit(clickObject, selectList, removeObject) {
 
   //判斷是否已被選擇
   if (clickObject.hasClass('selection')) {
-    //console.log("Click_Edit:已選擇>取消");
-
     //取消前一個選取顯示
     $('.selection').removeClass('selection');
   } else {
-    //console.log("Click_Edit:未選擇>選擇");
-
     //取消前一個選取顯示
     $('.selection').removeClass('selection');
     //確認選擇物件
@@ -753,7 +727,6 @@ function Click_Edit(clickObject, selectList, removeObject) {
     selectList.removeClass('hidden');
     //移動選擇視窗
     selectList.appendTo(clickObject.parents('.Team-container').find('.select_Item'));
-
   }
 }
 
@@ -763,20 +736,15 @@ function Click_Icon(clickObject, selectList, copyObject) {
   selectList.addClass('hidden');
   //查詢Class
   var iconClass = clickObject.find(copyObject);
-  //console.log(iconClass);
-
-  //const relicDiv = $(this).find('.relic-icon');
-  //relicDiv.clone().appendTo($('.selection'));
+  
   iconClass.clone().appendTo($('.selection'));
 
   //取消前一個選取顯示
   $('.selection').removeClass('selection');
 }
 
-
 var keepSrc;//保存src路徑
 var keepAlt;//保存alt
-
 
 //連鎖下拉選單
 $(document).on('click', '.option', function () {
@@ -785,9 +753,7 @@ $(document).on('click', '.option', function () {
   if (selectedDropdown.length > 0) {
     console.log('a');
     keepSrc = selectedDropdown.attr('src');
-    //var selectedImageSrc = selectedDropdown.attr('src');
     $(this).find('img:first').attr('src', keepSrc);
-    //$(this).find('img:first').attr('src', Alt);
     $(this).find('.dropdown').attr('style', 'display:none');
   }
 })
@@ -834,7 +800,6 @@ $(document).on("click", ".add-chain-time", function () {
 
   const $herder = $(this).parents('.header');
   //全選連鎖段數
-  //const $chain_containers = $herder.find('.chain-container');
   const $chain_containers = $('.chain-container');
   //重新調整z-index
   $chain_containers.each(function (index) {
@@ -857,7 +822,6 @@ $(document).on("click", ".add-chain-icon", function () {
   const cloneObject = $('.chain-icon-time:first').clone(true);
   //連鎖數量<4
   if (copyTo.find('.chain-icon-time').length < 4) {
-    //$chain_icon_time.clone(true).appendTo(copyTo);
     cloneObject.clone(true).appendTo(copyTo);
   }
 })
