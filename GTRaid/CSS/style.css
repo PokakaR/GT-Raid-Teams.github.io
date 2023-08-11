@@ -1,0 +1,711 @@
+.Windows {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 1000px;
+}
+.newTeamButton{
+  display:block;
+  width: 50px;
+  margin-left: 30px;
+  margin-bottom: 5px;
+}
+.newTeamButton button{
+  /*display:block;*/
+  width: 50px;
+}
+.Team{
+  width: 100%;
+}
+.Team-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
+}
+.removeTeamButton{
+  height: auto;
+  display: block;
+  margin-right: 5px;
+}
+.All{
+  width: 930px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+/*
+.select_Item{
+  width: 800px;
+  height: auto;
+}
+*/
+.edit_Team {
+  border: 2px solid rgb(0, 0, 0);
+  background-color: #1A2E3C;
+  width: auto;
+  height: 150px;
+  display: flex;
+}
+
+.removeTeamButton Button {
+  background-color: red;
+  border-radius: 5px;
+  color: white;
+  /*display:block;*/
+}
+
+.chain-Order-container{
+  background-color: rgb(204, 204, 204);
+  width: 330px;
+  height: auto;
+  display: block;
+}
+input{
+  width: 25px;
+  height: 15px;
+}
+.chain-container{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+}
+.chain-container button{
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  margin-left: 5px;
+  font-size: 10px;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+}
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  width: auto;
+  /*background-color: #f2f2f2;*/
+}
+.chain-icon-time-conatiner{
+  width: 255px;
+  display: flex;
+}
+.chain-icon-time{
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}
+.option {
+  position: relative;
+}
+
+.option img {
+  width: 26px;
+  height: 26px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  background-color: #666666;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/*
+.option:hover .dropdown {
+  display: block;
+}
+
+.dropdown img {
+  display: block;
+  width: 30px;
+  height: 30px;
+}*/
+
+.Attribute-select-container {
+  box-sizing: border-box;
+  border: 2px solid rgb(255, 255, 255);
+  width: 298px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Attribute-title {
+  box-sizing: border-box;
+  border: 0px solid rgb(0, 0, 0);
+  background-color: rgb(172, 172, 172);
+  height: auto;
+  flex-basis: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.Attribute-list {
+  box-sizing: border-box;
+  border: 0px solid rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 40px;
+  flex-grow: 9;
+  flex-shrink: 0;
+  justify-content: flex-start;
+}
+
+.attribute-icon-Container {
+  box-sizing: border-box;
+  border: 2px solid rgb(255, 255, 255);
+  margin: 2px 0px 2px 2px;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+}
+
+.attribute-icon {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.attribute-img {
+  width: 100%;
+  height: 100%;
+}
+
+.BOSS-select-container {
+  box-sizing: border-box;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: #171211;
+  width: 545px;
+  height: auto;
+  display: flex;
+}
+
+.BOSS-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+}
+
+
+.BOSS-list {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+.BOSS-icon-Container {
+  box-sizing: border-box;
+  border: 2px solid rgb(0, 0, 0);
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+}
+
+.BOSS-icon {
+  background-color: rgb(88, 88, 88);
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.BOSS-img {
+  width: 100%;
+  height: 100%;
+}
+
+.Relic-container {
+  width: 50px;
+  height: 50px;
+  /* position: relative;*/
+}
+
+.Char-container {
+  background-color: rgb(0, 0, 0);
+  border: 0px solid rgb(255, 0, 0);
+  width: 100px;
+  height: 150px;
+  margin: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Relic-select-container,
+.Accessory-select-container{
+  box-sizing: border-box;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: rgb(172, 172, 172);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Relic-title,
+.Accessory-title{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 40px;
+}
+
+.Relic-list,
+.Accessory-list{
+  background-color: rgb(0, 0, 0);
+  box-sizing: border-box;
+  border: 2px solid rgb(0, 0, 0);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+}
+
+.relic-icon-Container,
+.accessory-icon-Container {
+  margin: 2px;
+  box-sizing: border-box;
+  border: 2px solid rgb(255, 255, 255);
+  position: relative;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+}
+
+.relic-icon,
+.accessory-icon {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.relic-img,
+.accessory-img {
+  background-color: rgb(175, 175, 175);
+  width: 100%;
+  height: 100%;
+}
+
+.BOSS-container {
+  border: 0px solid rgb(255, 0, 0);
+  width: 120px;
+  height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.BOSS-img-container {
+  background-color: #431B1B;
+  box-sizing: border-box;
+  border: 2px solid rgb(0, 0, 0);
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+}
+
+.Attr-img-container {
+  background-color: #1A2E3C;
+  box-sizing: border-box;
+  border: 2px solid rgb(255, 255, 255);
+  overflow: hidden;
+  width: 30px;
+  height: 30px;
+}
+
+.BOSS-Name-container {
+  width: 90px;
+  height: 30px;
+  left: 5px;
+  display: flex;
+  align-items: center;
+  color: rgb(255, 255, 255);
+}
+
+.Relic-img-container,
+.Accessory-img-container {
+  box-sizing: border-box;
+  border: 2px solid rgb(0, 0, 0);
+  background-color: #C1AF8E;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+}
+
+.char-img-container {
+  box-sizing: border-box;
+  border: 2px solid rgb(0, 0, 0);
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.weapon-img-container {
+  box-sizing: border-box;
+  border: 2px solid rgb(0, 0, 0);
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+}
+
+.weapon-Flex {
+  background-color: rgb(33, 14, 204);
+  width: 100px;
+  height: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.relic-img {
+  box-sizing: border-box;
+  border: 0px solid rgb(0, 0, 0);
+  width: 100%;
+  height: 100%;
+}
+
+
+.EQ-select-container {
+  border: 2px solid rgb(0, 0, 0);
+  box-sizing: border-box;
+  width: 800px;
+  min-width: 400px;
+  max-width: 574px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: flex-start;
+}
+
+.EQ-title {
+  background-color: rgb(255, 255, 255);
+  flex-basis: 80px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.EQ-container {
+  background-color: rgb(172, 172, 172);
+  flex-basis: 80px;
+  flex-grow: 9;
+  flex-shrink: 1;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.EQ-icon-container {
+  background-color: rgb(232, 255, 167);
+  box-sizing: border-box;
+  border: 2px solid rgb(0, 0, 0);
+  overflow: hidden;
+  height: 40px;
+  width: 40px;
+}
+
+.EQ-icon {
+  position: relative;
+  z-index: 1;
+  background-color: rgb(0, 0, 0);
+  height: 100%;
+  width: 100%;
+}
+
+.EQ-icon-img {
+  height: 100%;
+  width: 100%;
+}
+
+.ex-Weapon,
+.basic-Weapon {
+  border: 1px solid rgb(0, 0, 0);
+  /**/
+  box-sizing: border-box;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  width: 100%;
+}
+
+
+.char-img-1 {
+  background-color: rgb(0, 0, 0);
+  grid-column: 1 / 4;
+  grid-row: 1 / 4;
+}
+
+.char-chain-img-1 {
+  background-color: rgb(250, 250, 250);
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+
+.char-chain-img-2 {
+  background-color: rgb(250, 250, 250);
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+}
+
+.Char-select-container {
+  border: 2px solid rgb(255, 255, 255);
+  /**/
+  box-sizing: border-box;
+  width: 574px;
+  min-width: 400px;
+  height: auto;
+  /*position: absolute;*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.att-1 {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  min-height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.left {
+  border: 0px solid rgb(70, 67, 255);
+  background-color: #171211;
+  height: 100%;
+  min-height: 40px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  width: 100%;
+  height: auto;
+}
+
+.title-img {
+  width: 100%;
+  width: 100%;
+}
+
+.right {
+  border: 0px solid rgb(70, 67, 255);
+  background-color: #171211;
+  width: 100%;
+  height: 100%;
+  min-height: 80px;
+  flex-grow: 9;
+  flex-shrink: 0;
+  flex-basis: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.grid-number {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
+  position: absolute;
+}
+
+.grid-number-Left-1 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.grid-number-Left-2 {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.grid-number-Right-1 {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+
+.grid-number-Right-2 {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+
+
+.hero-icon-Container {
+  border: 2px solid rgb(0, 0, 0);
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+}
+
+.hero-icon {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+.z-1 {
+  z-index: 1;
+}
+
+.hero-icon-grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
+  position: absolute;
+}
+
+.hero-img {
+  grid-column: 1 / 4;
+  grid-row: 1 / 4;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.grid-abnormal-state1 {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  z-index: 1;
+  position: relative;
+}
+
+.grid-abnormal-state2 {
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+  z-index: 1;
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+.selection {
+  border: 2px solid rgb(0, 119, 255);
+}
+
+
+.bg-color-dark {
+  background-color: #3D2D93;
+}
+
+.bg-color-fire {
+  background-color: #903219;
+}
+
+.bg-color-earth {
+  background-color: #7A381C;
+}
+
+.bg-color-light {
+  background-color: #CA9801;
+}
+
+.bg-color-normal {
+  background-color: #808080;
+}
+
+.bg-color-water {
+  background-color: #256596;
+}
+
+.bg-BOSS {
+  width: 60%;
+  height: 60%;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.center {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.radiu-7 {
+  border-radius: 7px;
+}
+
+.radiu-9 {
+  border-radius: 9px;
+}
+
+.radiu-4 {
+  border-radius: 4px;
+}
+
+.radiu-3 {
+  border-radius: 3px;
+}
+
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+
+/*滑進效果*/
+/*
+hero-icon-Container:hover
+char-img-container:hover
+.hero-img img:hover
+*/
+
+.weapon-img-container:hover,
+.EQ-icon-container:hover,
+.relic-icon-Container:hover,
+.Relic-img-container:hover,
+.Accessory-img-container:hover,
+.accessory-icon-Container:hover,
+.BOSS-img-container:hover,
+.Attr-img-container:hover,
+.BOSS-icon-Container:hover,
+.attribute-icon-Container:hover,
+.char-img-container:hover,
+.hero-icon-Container:hover {
+  border: 2px solid yellow;
+}
