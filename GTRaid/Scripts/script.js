@@ -678,12 +678,15 @@ $('.Attr-img-container').click(function () {
 
 //編輯器範本
 var teamTemplate = $('.Team-container').clone(true);
+//新增按鈕
 $('#newTeam').click(function () {
   var copyDiv = teamTemplate.clone(true);
+  if ($('#BOSS-info-Checkbox').prop('checked')) {
+    copyDiv.find('.BOSS-container').addClass('hidden');
+  } else {
+    //$('.BOSS-container').removeClass('hidden');
+  }
   copyDiv.appendTo('.Team');
-})
-$(document).on('click', '.removeTeam', function () {
-  click_RemoveButton($(this).parent());
 })
 
 //移除功能
