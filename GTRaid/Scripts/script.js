@@ -344,7 +344,7 @@ var weapon118= new Weapon("芬里爾","Fenrir","injured","water","Legend","Expre
 
 
 
-var weapons = Array.from({ length: 117 }, function (_, i) {
+var weapons = Array.from({ length: 118 }, function (_, i) {
   var num = i + 1;
   var name = "weapon" + num;
   return eval(name);
