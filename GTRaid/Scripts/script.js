@@ -85,8 +85,8 @@ var hero69= new Hero("矽雅","Sia","water","3","all","downed","Basket","");
 var hero70= new Hero("泳裝愛彌","BeachAmy","fire","3","injured","airborne","One-Handed","");
 var hero71= new Hero("銀荷","Eunha","normal","3","downed","airborne","Basket","");
 var hero72= new Hero("泳裝夏碧拉","BeachShapira","light","3","injured","downed","Two-Handed","");
-var hero73= new Hero("茉麗安","Morrian","earth","3","downed","injured","One-Handed","");
-var hero74= new Hero("維尼特","Vinette","dark","3","airborne","downed","Rifle","");
+var hero73= new Hero("莫里安","Morrian","earth","3","downed","injured","One-Handed","");
+var hero74= new Hero("碧內特","Vinette","dark","3","airborne","downed","Rifle","");
 var hero75= new Hero("莉娜","Lina","fire","3","injured","airborne","Gauntlet","");
 var hero76= new Hero("高里","Gourry","light","3","downed","airborne","Two-Handed","");
 var hero77= new Hero("傑洛士","Xelloss","dark","3","all","downed","Staff","");
@@ -131,6 +131,9 @@ var hero115= new Hero("麗","Rie","normal","2","airborne","downed","One-Handed",
 var hero116= new Hero("涅娃","Neva","light","2","downed","injured","Two-Handed","");
 
 
+
+
+//將英雄變數放進陣列中
 var heros = Array.from({ length: 116 }, function (_, i) {
   var num = i + 1;
   var name = "hero" + num;
@@ -139,7 +142,6 @@ var heros = Array.from({ length: 116 }, function (_, i) {
 
 for (let i = 0; i < heros.length; i++) {
   const newDiv1 = $('<div>', { class: "hero-icon-Container" });
-  //const newDiv2 = $('<div>', { id: "icon" + i, class: "hero-icon", style: "display:inline-block" });
   const newDiv2 = $('<div>', { class: "hero-icon", style: "display:inline-block" });
   const newDiv3 = $('<div>', { class: "hero-img", style: "display:inline-block" });
   const newHeroImg = $('<img>', { class:"absolute", src: heros[i].imgPath, alt: heros[i].en_name });
@@ -150,7 +152,6 @@ for (let i = 0; i < heros.length; i++) {
 
   newGrid.append(newAbnormalImg1);
   newGrid.append(newAbnormalImg2);
-  //newHeroImg.addClass('radiu-7');
   newDiv3.append(newHeroImg);
   newHeroName.addClass('absolute');
   newHeroName.text(heros[i].zh_name);
@@ -163,47 +164,23 @@ for (let i = 0; i < heros.length; i++) {
   newDiv1.addClass('radiu-4');
   newDiv1.addClass('relative');
 
-
   if (heros[i].attribute == "normal") {
     $('#normal-hero').append(newDiv1);
-    //$('#icon' + i).append(newGrid);
-    //$('#icon' + i).addClass(heros[i].sort1);
-    //$('#icon' + i).addClass(heros[i].sort2);
   }
-
   if (heros[i].attribute == "water") {
     $('#water-hero').append(newDiv1);
-    //$('#icon' + i).append(newGrid);
-    //$('#icon' + i).addClass(heros[i].sort1);
-    //$('#icon' + i).addClass(heros[i].sort2);
   }
-
   if (heros[i].attribute == "fire") {
     $('#fire-hero').append(newDiv1);
-    //$('#icon' + i).append(newGrid);
-    //$('#icon' + i).addClass(heros[i].sort1);
-    //$('#icon' + i).addClass(heros[i].sort2);
   }
-
   if (heros[i].attribute == "earth") {
     $('#earth-hero').append(newDiv1);
-    //$('#icon' + i).append(newGrid);
-    //$('#icon' + i).addClass(heros[i].sort1);
-    //$('#icon' + i).addClass(heros[i].sort2);
   }
-
   if (heros[i].attribute == "light") {
     $('#light-hero').append(newDiv1);
-    //$('#icon' + i).append(newGrid);
-    //$('#icon' + i).addClass(heros[i].sort1);
-    //$('#icon' + i).addClass(heros[i].sort2);
   }
-
   if (heros[i].attribute == "dark") {
     $('#dark-hero').append(newDiv1);
-    //$('#icon' + i).append(newGrid);
-    //$('#icon' + i).addClass(heros[i].sort1);
-    //$('#icon' + i).addClass(heros[i].sort2);
   }
 }
 
@@ -222,7 +199,6 @@ class Weapon {
   }
 }
 
-//var weapon1 = new Weapon("天真","Innocent","Downed","light","Epic","Express","Lapice","One-Handed");
 var weapon1= new Weapon("天真","Innocent","Downed","light","Epic","Express","Lapice","One-Handed");
 var weapon2= new Weapon("阿爾馬達","Armada","Downed","water","Epic","Express","Marina","One-Handed");
 var weapon3= new Weapon("方陣剎那","Eckesachs","Downed","dark","Epic","Express","None","One-Handed");
@@ -234,7 +210,7 @@ var weapon8= new Weapon("阿格斯","Arges","Downed","light","Epic","Express","V
 var weapon9= new Weapon("光環","Halo","Downed","fire","Epic","Express","Plitvice","One-Handed");
 var weapon10= new Weapon("迪朗達爾","Epic One Handed Sword","Downed","light","Epic","Express","Kai","One-Handed");
 var weapon11= new Weapon("羅摩之斧","Parashu","injured","fire","Epic","Express","BeachAmy","One-Handed");
-var weapon12= new Weapon("阿勞恩","Alraune","Downed","earth","Epic","Express","Morrian","One-Handed");
+var weapon12= new Weapon("愛娜溫","Alraune","Downed","earth","Epic","Express","Morrian","One-Handed");
 var weapon13= new Weapon("達伊之劍","Sword of Dai","Downed","normal","Epic","Express","Dai","One-Handed");
 var weapon14= new Weapon("村雨","Murasame","injured","fire","Legend","Express","Akayuki","One-Handed");
 var weapon15= new Weapon("利貝拉","Libera","airborne","normal","Legend","Express","None","One-Handed");
@@ -266,7 +242,7 @@ var weapon40= new Weapon("藍色尖刺","Blue Spear","airborne","water","Epic","
 var weapon41= new Weapon("方陣剎那Mode.R","Eckesachs Mode.R","airborne","dark","Epic","Express","None","Rifle");
 var weapon42= new Weapon("黑曼巴蛇","Black Mamba","injured","normal","Epic","Express","MissChrome","Rifle");
 var weapon43= new Weapon("拉特爾","Ratel","injured","earth","Epic","Express","Rosetta","Rifle");
-var weapon44= new Weapon("納米粒子加速器","1","airborne","dark","Epic","Express","Vinette","Rifle");
+var weapon44= new Weapon("納米粒子加速器","Nanoparticle Accelerator","airborne","dark","Epic","Express","Vinette","Rifle");
 var weapon45= new Weapon("麻煩精","Trouble Maker","airborne","fire","Legend","Express","Elvira","Rifle");
 var weapon46= new Weapon("無情","Merciless","Downed","earth","Legend","Express","Marianne","Rifle");
 var weapon47= new Weapon("藍玫瑰","Blue Rose","injured","water","Legend","Express","Rachel","Rifle");
@@ -344,6 +320,9 @@ var weapon118= new Weapon("芬里爾","Fenrir","injured","water","Legend","Expre
 
 
 
+
+
+//將武器變數放進陣列中
 var weapons = Array.from({ length: 118 }, function (_, i) {
   var num = i + 1;
   var name = "weapon" + num;
@@ -385,6 +364,7 @@ var relic2 = new Relic("book");
 var relic3 = new Relic("bell");
 var relic4 = new Relic("candelabrum");
 
+//將遺物變數放進陣列中
 var relices = Array.from({ length: 4 }, function (_, i) {
   var num = i + 1;
   var name = "relic" + num;
@@ -544,14 +524,18 @@ for (let i = 0; i < accessories.length; i++) {
 
 //武器欄位
 $('.weapon-img-container').click(function () {
+  //判斷是否有角色
   const $Char_container = $(this).parent();
   const has_heroIcon = $Char_container.find('.char-img-container .hero-icon');
   if (has_heroIcon.length > 0) {
+    //移除武器
     const clickObject = $(this);
     const selectList = $('.EQ-select-container');
     const removeObject = '.EQ-icon';
     Click_Edit(clickObject, selectList, removeObject);
+    //隱藏所有武器
     $('.EQ-icon-container').addClass('hidden');
+    //顯示類型武器
     const weapon_Class = $(this).attr('class').split(' ');
     $('.EQ-icon-container').find('.' + weapon_Class[3]).parent().removeClass('hidden');
   }
@@ -559,10 +543,14 @@ $('.weapon-img-container').click(function () {
 
 //選擇武器
 $('.EQ-icon-container').click(function () {
+  //隱藏武器清單
   $('.EQ-select-container').addClass('hidden');
+
   var eqIcon = $(this).find('.EQ-icon');
   eqIcon.clone().appendTo('.selection');
   console.log($(this).find('.EQ-icon'));
+
+  //取消選取顯示
   $('.selection').removeClass('selection');
 })
 
@@ -571,14 +559,18 @@ $('.hero-icon-Container').click(function () {
   var clickObject = $(this);
   var selectList = $('.Char-select-container');
   var copyObject = $('.hero-icon');
+
+  //取得英雄名字class、武器分類class
   var heroClassSplit = clickObject.attr('class').split(' ');
   var $Chain_Container = $('.selection').parent();
+  //加入class
   $Chain_Container.find('.char-img-container').addClass(heroClassSplit[1]);
   $Chain_Container.find('.weapon-img-container').addClass(heroClassSplit[2]);
 
+  //選擇Team-container
   const $Team_container = clickObject.parents('.Team-container');
   const $chain_container = $Team_container.find('.header .chain-container');
-
+  //變更連鎖圖片
   var optionValue = $Chain_Container.data('option');//hero1、hero2、hero3、hero4
   if (optionValue == "hero1") {
     $chain_container.find('.chain-Select-1').attr('src', clickObject.find('.hero-img img').attr('src'));
@@ -592,6 +584,8 @@ $('.hero-icon-Container').click(function () {
   if (optionValue == "hero4") {
     $chain_container.find('.chain-Select-4').attr('src', clickObject.find('.hero-img img').attr('src'));
   }
+
+  //Click_Icon(點擊物件class,選擇清單class,複製物件class)
   Click_Icon(clickObject, selectList, copyObject);
 })
 
@@ -601,13 +595,16 @@ $('.char-img-container').click(function () {
   const selectList = $('.Char-select-container');
   const removeObject = '.hero-icon';
 
+  //判斷是否有英雄
   if (clickObject.find('.hero-icon').length > 0) {
     const $Chain_Container = clickObject.parent();
     const $char_img_container = $Chain_Container.find('.char-img-container');
     const $weapon_img_container = $Chain_Container.find('.weapon-img-container');
     const heroClass = $char_img_container.attr('class').split(' ');
     const weaponClass = $weapon_img_container.attr('class').split(' ');
+    //清空武器
     $weapon_img_container.find('.EQ-icon').remove();
+    //移除class
     $char_img_container.removeClass(heroClass[3]);
     $weapon_img_container.removeClass(weaponClass[3]);
   }
@@ -620,6 +617,7 @@ $('.relic-icon-Container').click(function () {
   var clickObject = $(this);
   var selectList = $('.Relic-select-container');
   var copyObject = $('.relic-icon');
+  //Click_Icon(點擊物件class,選擇清單class,複製物件class)
   Click_Icon(clickObject, selectList, copyObject);
 })
 
@@ -643,6 +641,7 @@ $('.accessory-icon-Container').click(function () {
   var clickObject = $(this);
   var selectList = $('.Accessory-select-container');
   var copyObject = $('.accessory-icon');
+  //Click_Icon(點擊物件class,選擇清單class,複製物件class)
   Click_Icon(clickObject, selectList, copyObject);
 })
 
@@ -651,7 +650,9 @@ $('.BOSS-icon-Container').click(function () {
   var clickObject = $(this);
   var selectList = $('.BOSS-select-container');
   var copyObject = $('.BOSS-icon');
+  //取得BOSS名稱
   var boss_name = clickObject.find('.BOSS-icon .BOSS-img img').attr('alt')
+  //Click_Icon(點擊物件class,選擇清單class,複製物件class)
   Click_Icon(clickObject, selectList, copyObject);
   $('.boss-Name').text(boss_name);
   //$('.boss-Name').removeClass('boss-Name');
@@ -663,8 +664,10 @@ $('.BOSS-img-container').click(function () {
   var selectList = $('.BOSS-select-container');
   var removeObject = ".BOSS-icon";
   Click_Edit(clickObject, selectList, removeObject);
+  //抓取名稱欄位
   var bossTextObject = clickObject.parent().find('.BOSS-Name-container');
   bossTextObject.text('');
+  //加入辨識欄位標籤
   bossTextObject.addClass('boss-Name');
 })
 
@@ -673,6 +676,7 @@ $('.attribute-icon-Container').click(function () {
   var clickObject = $(this);
   var selectList = $('.Attribute-select-container');
   var copyObject = $('.attribute-icon');
+  //Click_Icon(點擊物件class,選擇清單class,複製物件class)
   Click_Icon(clickObject, selectList, copyObject);
 })
 
@@ -684,6 +688,7 @@ $('.Attr-img-container').click(function () {
   Click_Edit(clickObject, selectList, removeObject);
 })
 
+
 //編輯器範本
 var teamTemplate = $('.Team-container').clone(true);
 //新增按鈕
@@ -691,10 +696,13 @@ $('#newTeam').click(function () {
   var copyDiv = teamTemplate.clone(true);
   if ($('#BOSS-info-Checkbox').prop('checked')) {
     copyDiv.find('.BOSS-container').addClass('hidden');
-  } else {
-    //$('.BOSS-container').removeClass('hidden');
   }
   copyDiv.appendTo('.Team');
+})
+
+$(document).on('click', '.removeTeam', function () {
+  click_RemoveButton($(this).parent());
+  $('.selectList').addClass('hidden');
 })
 
 //移除功能
@@ -702,30 +710,52 @@ function click_RemoveButton(click_Object) {
   //遍歷class
   click_Object.parent().find('.edit_Team .Char-container .char-img-container').each(function () {
     var heroClassSplit = $(this).attr('class').split(' ');
+    //移除hidden標籤(英雄清單顯示被移除英雄)
     $('.' + heroClassSplit[3]).removeClass('hidden');
   })
+
+  //將selectList移出
   click_Object.parent().find('.select_Item .selectList').each(function () {
     $('.Windows').append($(this));
   })
+  //刪除編輯器
   click_Object.parent().remove();
 }
 
+//Click_Icon(點擊物件class,選擇清單class)
 function Click_Edit(clickObject, selectList, removeObject) {
   $('.boss-Name').removeClass('boss-Name');
+  //隱藏所有選擇視窗(BOSS、遺物、道具)
   $('.selectList').addClass('hidden');
+
+  //判斷是否已被選擇
   if (clickObject.hasClass('selection')) {
+    //console.log("Click_Edit:已選擇>取消");
+
+    //取消前一個選取顯示
     $('.selection').removeClass('selection');
   } else {
+    //console.log("Click_Edit:未選擇>選擇");
+
+    //取消前一個選取顯示
     $('.selection').removeClass('selection');
+    //確認選擇物件
     clickObject.addClass('selection');
+    //清空選擇物件底下的元素
     clickObject.find(removeObject).remove();
+    //顯示選擇視窗
     selectList.removeClass('hidden');
+    //移動選擇視窗
     selectList.appendTo(clickObject.parents('.Team-container').find('.select_Item'));
+
   }
 }
 
+//Click_Icon(點擊物件class,選擇清單class,複製物件class)
 function Click_Icon(clickObject, selectList, copyObject) {
+  //隱藏視窗
   selectList.addClass('hidden');
+  //查詢Class
   var iconClass = clickObject.find(copyObject);
   //console.log(iconClass);
 
@@ -733,14 +763,19 @@ function Click_Icon(clickObject, selectList, copyObject) {
   //relicDiv.clone().appendTo($('.selection'));
   iconClass.clone().appendTo($('.selection'));
 
+  //取消前一個選取顯示
   $('.selection').removeClass('selection');
 }
 
-var keepSrc;
-var keepAlt;
 
+var keepSrc;//保存src路徑
+var keepAlt;//保存alt
+
+
+//連鎖下拉選單
 $(document).on('click', '.option', function () {
   var selectedDropdown = $(this).find('.dropdown img.selected');
+  //點擊下拉選單選項
   if (selectedDropdown.length > 0) {
     console.log('a');
     keepSrc = selectedDropdown.attr('src');
@@ -751,6 +786,7 @@ $(document).on('click', '.option', function () {
   }
 })
 
+//移除連鎖小圖示
 $(document).on('click', '.chain-Select-now', function () {
   //console.log($('.chain-Select-now').length);
   const $this_Top_Parent = $(this).parent().parent().parent();
@@ -759,6 +795,7 @@ $(document).on('click', '.chain-Select-now', function () {
     $(this).parent().parent().remove();
   }
 })
+//添加selected標籤
 $(document).on('click', '.dropdown img', function () {
   $(this).siblings().removeClass('selected');
   $(this).addClass('selected');
@@ -767,8 +804,10 @@ $(document).on('click', '.dropdown img', function () {
 //滑進效果
 $(document).on("mouseenter", ".option", function () {
   $(this).find('.dropdown').attr('style', 'display:block');
+  //儲存狀態
   keepSrc = $(this).find('.chain-Select-now').attr('src');
   keepAlt = $(this).find('.chain-Select-now').attr('alt');
+  //變更為刪除圖示
   $(this).find('.chain-Select-now').attr('src', 'image/UI/removeButton.png');
   $(this).find('.chain-Select-now').attr('alt', 'del_Chain');
 })
@@ -782,13 +821,16 @@ $(document).on("mouseleave", ".option", function () {
 //複製連鎖時間
 //var $chain_Container = $('.chain-container').clone(true);
 $(document).on("click", ".add-chain-time", function () {
+  //新增連鎖段數
   const $chain_container = $(this).parent();
   const copyTo = $chain_container.parent();
   $chain_container.clone(true).appendTo(copyTo);
 
   const $herder = $(this).parents('.header');
+  //全選連鎖段數
   //const $chain_containers = $herder.find('.chain-container');
   const $chain_containers = $('.chain-container');
+  //重新調整z-index
   $chain_containers.each(function (index) {
     $(this).css('z-index', 30 - index);
   })
