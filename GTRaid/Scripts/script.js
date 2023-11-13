@@ -87,54 +87,57 @@ var hero71= new Hero("銀荷","Eunha","normal","3","downed","airborne","Basket",
 var hero72= new Hero("泳裝夏碧拉","BeachShapira","light","3","injured","downed","Two-Handed","");
 var hero73= new Hero("莫里安","Morrian","earth","3","downed","injured","One-Handed","");
 var hero74= new Hero("碧內特","Vinette","dark","3","airborne","downed","Rifle","");
-var hero75= new Hero("莉娜","Lina","fire","3","injured","airborne","Gauntlet","");
-var hero76= new Hero("高里","Gourry","light","3","downed","airborne","Two-Handed","");
-var hero77= new Hero("傑洛士","Xelloss","dark","3","all","downed","Staff","");
-var hero78= new Hero("達伊","Dai","normal","3","downed","airborne","One-Handed","");
-var hero79= new Hero("瑪姆","Maam","earth","3","injured","airborne","Gauntlet","");
-var hero80= new Hero("波普","Popp","fire","3","airborne","downed","Staff","");
-var hero81= new Hero("女騎士(1專)","FemaleKnight","normal","2","airborne","downed","One-Handed","");
-var hero82= new Hero("女騎士(2專)","FemaleKnight","normal","2","airborne","downed","Bow","");
-var hero83= new Hero("伊娃","Eva","light","2","airborne","downed","Staff","");
-var hero84= new Hero("艾薇拉","Elvira","fire","2","airborne","downed","Rifle","");
-var hero85= new Hero("艾薇拉(晉升)","Elvira_Ascended","fire","3","airborne","downed","Rifle","");
-var hero86= new Hero("白獸","WhiteBeast","water","2","injured","airborne","Claw","");
-var hero87= new Hero("卡麗娜","Karina","dark","2","downed","injured","Staff","");
-var hero88= new Hero("卡麗娜(晉升)","Karina_Ascended","dark","3","all","injured","Staff","");
-var hero89= new Hero("蘿蘭茵","Loraine","normal","2","all","injured","Basket","");
-var hero90= new Hero("拉葳","Lavi","fire","2","downed","airborne","Gauntlet","");
-var hero91= new Hero("法葳","Favi","water","2","all","injured","Basket","");
-var hero92= new Hero("奧芭","Aoba","earth","2","all","downed","Bow","");
-var hero93= new Hero("葛蕾茉莉","Gremory","dark","2","all","airborne","Basket","");
-var hero94= new Hero("瑞秋","Rachel","water","2","injured","downed","Rifle","");
-var hero95= new Hero("赫卡蒂","Hekate","earth","2","downed","injured","Rifle","");
-var hero96= new Hero("可可","Coco","water","2","injured","airborne","Staff","");
-var hero97= new Hero("瑪莉安","Marianne","earth","2","downed","airborne","Rifle","");
-var hero98= new Hero("蘇熙","Sohee","light","2","downed","airborne","Rifle","");
-var hero99= new Hero("梅兒","Mei","light","2","downed","airborne","Gauntlet","");
-var hero100= new Hero("梅兒(晉升)","Mei_Ascended","light","3","downed","airborne","Gauntlet","");
-var hero101= new Hero("飛兒","Fei","light","2","downed","airborne","Gauntlet","");
-var hero102= new Hero("飛兒(晉升)","Fei_Ascended","light","3","downed","airborne","Gauntlet","");
-var hero103= new Hero("馬文","Marvin","earth","2","airborne","downed","Gauntlet","");
-var hero104= new Hero("克雷格","Craig","earth","2","downed","airborne","One-Handed","Shield");
-var hero105= new Hero("克雷格(晉升)","Craig_Ascended","earth","3","downed","airborne","One-Handed","Shield");
-var hero106= new Hero("赤雪","Akayuki","fire","2","injured","downed","One-Handed","");
-var hero107= new Hero("蘭芳","Ranpang","normal","2","injured","airborne","Gauntlet","");
-var hero108= new Hero("優姬","Yuze","dark","2","airborne","injured","Two-Handed","");
-var hero109= new Hero("艾伊莎","Aisha","light","2","all","downed","One-Handed","Shield");
-var hero110= new Hero("夏碧拉","Shapira","dark","2","airborne","downed","Two-Handed","");
-var hero111= new Hero("多爾夫","Dolf","fire","2","downed","injured","Staff","");
-var hero112= new Hero("愛彌","Amy","normal","2","downed","injured","Two-Handed","");
-var hero113= new Hero("基魯加斯","Girgas","fire","2","injured","airborne","Staff","");
-var hero114= new Hero("凱特琳","Catherine","water","2","airborne","injured","Bow","");
-var hero115= new Hero("麗","Rie","normal","2","airborne","downed","One-Handed","");
-var hero116= new Hero("涅娃","Neva","light","2","downed","injured","Two-Handed","");
+var hero75= new Hero("雲苓","WinLing","fire","3","downed","airborne","Gauntlet","");
+var hero76= new Hero("奧迪勒","newHero","light","3","injured","downed","Claw","");
+var hero77= new Hero("米可","cat","normal","3","downed","injured","One-Handed","");
+var hero78= new Hero("莉娜","Lina","fire","3","injured","airborne","Gauntlet","");
+var hero79= new Hero("高里","Gourry","light","3","downed","airborne","Two-Handed","");
+var hero80= new Hero("傑洛士","Xelloss","dark","3","all","downed","Staff","");
+var hero81= new Hero("達伊","Dai","normal","3","downed","airborne","One-Handed","");
+var hero82= new Hero("瑪姆","Maam","earth","3","injured","airborne","Gauntlet","");
+var hero83= new Hero("波普","Popp","fire","3","airborne","downed","Staff","");
+var hero84= new Hero("女騎士(1專)","FemaleKnight","normal","2","airborne","downed","One-Handed","");
+var hero85= new Hero("女騎士(2專)","FemaleKnight","normal","2","airborne","downed","Bow","");
+var hero86= new Hero("伊娃","Eva","light","2","airborne","downed","Staff","");
+var hero87= new Hero("艾薇拉","Elvira","fire","2","airborne","downed","Rifle","");
+var hero88= new Hero("艾薇拉(晉升)","Elvira_Ascended","fire","3","airborne","downed","Rifle","");
+var hero89= new Hero("白獸","WhiteBeast","water","2","injured","airborne","Claw","");
+var hero90= new Hero("卡麗娜","Karina","dark","2","downed","injured","Staff","");
+var hero91= new Hero("卡麗娜(晉升)","Karina_Ascended","dark","3","all","injured","Staff","");
+var hero92= new Hero("蘿蘭茵","Loraine","normal","2","all","injured","Basket","");
+var hero93= new Hero("拉葳","Lavi","fire","2","downed","airborne","Gauntlet","");
+var hero94= new Hero("法葳","Favi","water","2","all","injured","Basket","");
+var hero95= new Hero("奧芭","Aoba","earth","2","all","downed","Bow","");
+var hero96= new Hero("葛蕾茉莉","Gremory","dark","2","all","airborne","Basket","");
+var hero97= new Hero("瑞秋","Rachel","water","2","injured","downed","Rifle","");
+var hero98= new Hero("赫卡蒂","Hekate","earth","2","downed","injured","Rifle","");
+var hero99= new Hero("可可","Coco","water","2","injured","airborne","Staff","");
+var hero100= new Hero("瑪莉安","Marianne","earth","2","downed","airborne","Rifle","");
+var hero101= new Hero("蘇熙","Sohee","light","2","downed","airborne","Rifle","");
+var hero102= new Hero("梅兒","Mei","light","2","downed","airborne","Gauntlet","");
+var hero103= new Hero("梅兒(晉升)","Mei_Ascended","light","3","downed","airborne","Gauntlet","");
+var hero104= new Hero("飛兒","Fei","light","2","downed","airborne","Gauntlet","");
+var hero105= new Hero("飛兒(晉升)","Fei_Ascended","light","3","downed","airborne","Gauntlet","");
+var hero106= new Hero("馬文","Marvin","earth","2","airborne","downed","Gauntlet","");
+var hero107= new Hero("克雷格","Craig","earth","2","downed","airborne","One-Handed","Shield");
+var hero108= new Hero("克雷格(晉升)","Craig_Ascended","earth","3","downed","airborne","One-Handed","Shield");
+var hero109= new Hero("赤雪","Akayuki","fire","2","injured","downed","One-Handed","");
+var hero110= new Hero("蘭芳","Ranpang","normal","2","injured","airborne","Gauntlet","");
+var hero111= new Hero("優姬","Yuze","dark","2","airborne","injured","Two-Handed","");
+var hero112= new Hero("艾伊莎","Aisha","light","2","all","downed","One-Handed","Shield");
+var hero113= new Hero("夏碧拉","Shapira","dark","2","airborne","downed","Two-Handed","");
+var hero114= new Hero("多爾夫","Dolf","fire","2","downed","injured","Staff","");
+var hero115= new Hero("愛彌","Amy","normal","2","downed","injured","Two-Handed","");
+var hero116= new Hero("基魯加斯","Girgas","fire","2","injured","airborne","Staff","");
+var hero117= new Hero("凱特琳","Catherine","water","2","airborne","injured","Bow","");
+var hero118= new Hero("麗","Rie","normal","2","airborne","downed","One-Handed","");
+var hero119= new Hero("涅娃","Neva","light","2","downed","injured","Two-Handed","");
 
 
 
 
 //將英雄變數放進陣列中
-var heros = Array.from({ length: 116 }, function (_, i) {
+var heros = Array.from({ length: 119 }, function (_, i) {
   var num = i + 1;
   var name = "hero" + num;
   return eval(name);
@@ -199,6 +202,7 @@ class Weapon {
   }
 }
 
+//var weapon1= new Weapon("天真","Innocent","Downed","light","Epic","Express","Lapice","One-Handed");
 var weapon1= new Weapon("天真","Innocent","Downed","light","Epic","Express","Lapice","One-Handed");
 var weapon2= new Weapon("阿爾馬達","Armada","Downed","water","Epic","Express","Marina","One-Handed");
 var weapon3= new Weapon("方陣剎那","Eckesachs","Downed","dark","Epic","Express","None","One-Handed");
@@ -305,25 +309,24 @@ var weapon103= new Weapon("威望","Prestige","Downed","earth","Epic","Express",
 var weapon104= new Weapon("存取遭拒","Permission Denied","Downed","dark","Epic","Express","Crosselle","Gauntlet");
 var weapon105= new Weapon("行星破獲者","Planet Buster","Downed","fire","Epic","Express","Pymon","Gauntlet");
 var weapon106= new Weapon("造雪機","Snow Maker","airborne","water","Epic","Express","WhiteSnow","Gauntlet");
-var weapon107= new Weapon("魔血符","Demon's Blood Talisman","injured","fire","Epic","Express","Lina","Gauntlet");
-var weapon108= new Weapon("魔甲拳","Dark Armour Fist","injured","earth","Epic","Express","Maam","Gauntlet");
-var weapon109= new Weapon("法爾肯","Vulkan","airborne","earth","Legend","Express","Marvin","Gauntlet");
-var weapon110= new Weapon("鬥士的自尊","Pride of Fighter","Downed","light","Legend","Express","Mei","Gauntlet");
-var weapon111= new Weapon("粉碎者","Pulverizer","Downed","fire","Legend","Express","Lavi","Gauntlet");
-var weapon112= new Weapon("火山號角","Volcanic Horn","airborne","fire","Epic","Express","None","Claw");
-var weapon113= new Weapon("索拉里斯","Solaris","Downed","earth","Epic","Express","Mayreel","Claw");
-var weapon114= new Weapon("女王的優雅","Queen's Grace","injured","dark","Epic","Express","Lilith","Claw");
-var weapon115= new Weapon("影丸","Kagemaru","Downed","dark","Epic","Express","Sumire","Claw");
-var weapon116= new Weapon("龍齒","Dragon Fang","airborne","earth","Epic","Express","Ameris","Claw");
-var weapon117= new Weapon("堅決的心","Firm Determination","injured","normal","Legend","Express","Ranpang","Claw");
-var weapon118= new Weapon("芬里爾","Fenrir","injured","water","Legend","Express","WhiteBeast","Claw");
-
-
-
+var weapon107= new Weapon("煉火拳套","Refiner's Flame","Downed","fire","Epic","Express","WinLing","Gauntlet");
+var weapon108= new Weapon("魔血符","Demon's Blood Talisman","injured","fire","Epic","Express","Lina","Gauntlet");
+var weapon109= new Weapon("魔甲拳","Dark Armour Fist","injured","earth","Epic","Express","Maam","Gauntlet");
+var weapon110= new Weapon("法爾肯","Vulkan","airborne","earth","Legend","Express","Marvin","Gauntlet");
+var weapon111= new Weapon("鬥士的自尊","Pride of Fighter","Downed","light","Legend","Express","Mei","Gauntlet");
+var weapon112= new Weapon("粉碎者","Pulverizer","Downed","fire","Legend","Express","Lavi","Gauntlet");
+var weapon113= new Weapon("火山號角","Volcanic Horn","airborne","fire","Epic","Express","None","Claw");
+var weapon114= new Weapon("索拉里斯","Solaris","Downed","earth","Epic","Express","Mayreel","Claw");
+var weapon115= new Weapon("女王的優雅","Queen's Grace","injured","dark","Epic","Express","Lilith","Claw");
+var weapon116= new Weapon("影丸","Kagemaru","Downed","dark","Epic","Express","Sumire","Claw");
+var weapon117= new Weapon("龍齒","Dragon Fang","airborne","earth","Epic","Express","Ameris","Claw");
+var weapon118= new Weapon("新武器","newWeapon","injured","light","Epic","Express","newHero","Claw");
+var weapon119= new Weapon("堅決的心","Firm Determination","injured","normal","Legend","Express","Ranpang","Claw");
+var weapon120= new Weapon("芬里爾","Fenrir","injured","water","Legend","Express","WhiteBeast","Claw");
 
 
 //將武器變數放進陣列中
-var weapons = Array.from({ length: 118 }, function (_, i) {
+var weapons = Array.from({ length: 120 }, function (_, i) {
   var num = i + 1;
   var name = "weapon" + num;
   return eval(name);
