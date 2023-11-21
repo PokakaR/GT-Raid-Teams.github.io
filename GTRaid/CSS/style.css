@@ -617,7 +617,7 @@ input {
   pointer-events: none;
   /* 避免擋住滑鼠事件 */
   transition: opacity 0.3s ease-in-out;
-  font-size: 1px;
+  font-size: 10px;
   z-index: 2;
 }
 .hero-img:hover .image-name,
