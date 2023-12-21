@@ -323,7 +323,7 @@ var weapon116= new Weapon("索拉里斯","Solaris","Downed","earth","Epic","Expr
 var weapon117= new Weapon("女王的優雅","Queen's Grace","injured","dark","Epic","Express","Lilith","Claw");
 var weapon118= new Weapon("影丸","Kagemaru","Downed","dark","Epic","Express","Sumire","Claw");
 var weapon119= new Weapon("龍齒","Dragon Fang","airborne","earth","Epic","Express","Ameris","Claw");
-var weapon120= new Weapon("血吸","Trouble Shooter","injured","light","Epic","Express","Odile","Claw");
+var weapon120= new Weapon("難題解決者","Trouble Shooter","injured","light","Epic","Express","Odile","Claw");
 var weapon121= new Weapon("堅決的心","Firm Determination","injured","normal","Legend","Express","Ranpang","Claw");
 var weapon122= new Weapon("芬里爾","Fenrir","injured","water","Legend","Express","WhiteBeast","Claw");
 
